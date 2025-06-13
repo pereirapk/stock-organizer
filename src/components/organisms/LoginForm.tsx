@@ -9,7 +9,7 @@ interface LoginFormProps {
 
 export const LoginForm = ({ handleSubmit }: LoginFormProps) => {
   return (
-    <form className="space-y-4">
+    <form className="space-y-4" onSubmit={handleSubmit}>
       <InputGroup />
     </form>
   )};

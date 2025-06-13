@@ -1,12 +1,12 @@
+"use client"
 import LoginPageComponent from "../../components/organisms/LoginPage";
 import { loginModel } from "./viewModel/loginModel";
 
-export const LoginPage = () => {
+ const LoginPage = () => {
   const {
     handleSubmit,
   } = loginModel();
 
-  return <LoginPageComponent 
-  handleSubmit={handleSubmit}
-    />;
+  return <LoginPageComponent handleSubmit={handleSubmit}/>;
 }
+export default LoginPage;
